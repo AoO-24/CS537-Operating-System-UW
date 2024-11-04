@@ -1,0 +1,113 @@
+wgroff(1)                                                              wgroff(1)
+
+[1mNAME[0m
+       wgroff - simplified document formatting system
+
+[1mSYNOPSIS[0m
+       [1mwgroff[0m [3mfile[0m
+
+[1mDESCRIPTION[0m
+       [1mwgroff[0m is a simplified version of groff. It takes as input a
+       formatted file and outputs a file that has been reformatted for use
+       in the [1mwman[0m and [1mwapropos[0m programs.
+       
+       If the input file is not provided then a usage message is printed
+       and the program terminates.  If the input file is improperly
+       formatted then a message indicating the first line of improper
+       formatting is indicated and the program terminates.
+       
+
+[1mFORMATTED INPUT FILES[0m
+       
+       There are two types of marks -- [1mStructuture Marks[0m and [1mFormatting
+       Marks[0m.
+       
+       [1m[4mStructure Marks[0m
+       
+       Strucure marks must be on their own line and the line must begin
+       with a dot (.).  There are two structure marks.  The first is the
+       TH mark and must be the first line of the input file (and only the
+       first line).  It stands for "Title Header" and its sructure is:
+       
+            .TH <command> <section> <date>
+       
+       The arguments are required.  The <command> is the program or manual
+       page that is being created.  The <section> is a number between 1
+       and 9.  The date is in the form YYYY-MM-DD.
+       
+       Here is an example TH line:
+       
+            .TH wgroff 1 2013-08-13
+       
+       In the output file, the TH line controls the first and last line
+       of the file.  The first and last lines of the output file should
+       be 80 characters long.  The first line should have the command
+       followed by parentheses containing the section at the top left and
+       top right seperated by spaces.  So for the example above the first
+       line would look something like:
+       
+       wgroff(1)                                 wgroff(1)
+       
+       But of course it would be exactly 80 characters wide.  The last line
+       should also be 80 characters wide with the date centered on the line.
+       For the example above the footer would look like:
+       
+                          2013-08-13                   
+       
+       The second structure mark is the SH or section header. This line has
+       the form:
+       
+         .SH <name>
+       
+       Where the <name> can be anything.  When this line is formatted and
+       sent to the output file <name> should be converted to all capitals
+       and should be in bold (see below for writing with formatted text).
+       A blank line should be added to the output file before every
+       section header.
+       
+       Here is an example SH line:
+       
+        .SH description
+       
+       And what should appear in the output file:
+       
+        <this line should be blank>
+        \033[1mDESCRIPTION\033[0m
+       
+       [1m[4mFormatting Marks[0m
+       
+       Formatting marks can appear within the text on any non-structure
+       line.  These formatting marks are converted to ANSI commands so
+       when the output file is displayed in a terminal they will appear
+       with the proper formatting.  wgroff recognizes the following
+       formatting marks:
+       
+            - /fB - bold
+            - /fI - italic
+            - /fU - underline
+            - /fP - reset to normal formatting
+            - // - output a forward-slash character
+       
+       When these formatting marks are encountered wgroff outputs the
+       appropriate ANSI command to create the proper formatting (except
+       for the // as that should just output a forward-slash).  Here are
+       the ASCII characters that you can write out to the file that will be
+       interpreted as ANSI commands when the file is displayed in a terminal:
+       
+            - bold - \033[1m
+            - italic - \033[3m
+            - underline - \033[4m
+            - reset - \033[0m
+       
+       All non-structure lines must be scanned for these formatting marks and
+       converted before sending to the output file.
+       
+       Two final items:
+       
+       - the output file should be named the <command>.<section> taken from
+       the TH line.  So in the example above the output file should be
+       called wgroff.1.
+       
+       - All non-structure lines should be indented seven spaces in the output
+       file in addition to converting the formatting marks.
+                                   2023-08-14                                   

@@ -1,0 +1,30 @@
+.TH wapropos 1 2023-08-15
+.SH name
+wapropos - a simplified program to search manual page names and descriptions
+.SH synopsis
+/fBwapropos/fP keword
+.SH description
+/fBwapropos/fP is a simplified version of apropos for use with
+wman and wgroff.  It searches the manual found in ./man_pages
+for the user-provided /fUkeyword/fP.
+
+/fUkeyword/fP is a single word (i.e. no spaces) and must be found in
+either the NAME section or the DESCRIPTION section of the manual pages.
+
+The output of this program is a list of all manual pages (with their
+section) that contain the keyword.  The list should be ordered with pages
+found in lower sections before pages found in higher sections.  The list
+also contains the one-line of information after the dash in the NAME section.
+
+If no keyword is given the program should print "wapropos what?\n" and exit.
+If no pages contain the keyword then print "nothing appropriate\n" and exit.
+
+Here is an example run:
+
+./wapropos simplified
+
+The output would look like:
+
+wman (1) - a simplified manual program
+wgroff (1) - simplified document formatting system
+wapropos (1) - a simplified program to search manual page names and descriptions

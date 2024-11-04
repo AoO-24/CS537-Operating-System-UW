@@ -1,0 +1,20 @@
+.TH example 1 2023-08-11
+.SH name
+example - an example program
+.SH SYNOPSIS
+#example comment
+/fBexample/fP -k -W [/fIoptions/fP] argument
+.SH Description
+This is a fake example program.  The command line switches, options, and
+arguments don't actually exist since this is just an example.
+
+This text is in a new paragraph.  Blank lines should also be output.
+So this /fUparagraph/fP should have a blank line before it.
+You should see /fBbold/fP, /fIitalic/fP, and /fUunderline/fP and
+these can be /fB/fI/fUcombined/fP.  You can also output // characters.
+
+Typical man pages will have a NAME section, a SYNOPSIS section,
+and a DESCRIPTION section (at least).  The NAME and DESCRIPTION
+sections are important for the apropos program.
+
+blah.

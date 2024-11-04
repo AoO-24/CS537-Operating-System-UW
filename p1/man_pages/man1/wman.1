@@ -1,0 +1,37 @@
+wman(1)                                                                  wman(1)
+
+[1mNAME[0m
+       wman - a simplified manual program
+
+[1mSYNOPSIS[0m
+       [1mwman[0m [section] page
+
+[1mDESCRIPTION[0m
+       [1mwman[0m is a simplified version of man, the system manual program.
+       It takes as input the manual page which should be displayed (and an
+       optional section number between 1 and 9).  It finds the appropriate
+       manual page and prints it.  If a section number is provided then
+       only that section of the manual should be searched for the page.
+       
+       Manual pages (at least for this program) should be stored in
+       the [3m./man_pages[0m directory inside of subdirectories for each section.
+       Subdirectories of [3mman1[0m, [3mman2[0m, through [3mman9[0m should exist
+       and only the appropriate subdirectory should be searched if a section
+       number is given.
+       
+       Manual pages should be stored in files of the form [4m<page>.<section>[0m
+       where <page> is the manual page and <section> is the section number.
+       These files should be formatted by the [1mwgroff[0m program and be
+       stored in the appropriate subdirectory.
+       
+       When searching for a manual page, the subdirectories should be searched
+       in order from [3mman1[0m through [3mman9[0m.  The first page that matches
+       the user request should be displayed.  If no page is found then print
+       the message "No manual entry for <page>\n" and exit.  When searching
+       in a single section and nothing is found, print the message "No manual
+       entry for <page> in section <section>\n" and exit.
+       
+       If the user fails to provide a page to be displayed then print the
+       message "What manual page do you want?\nFor example, try 'wman wman'\n".
+       If section is not a number between 1 and 9 then print the message
+       "invalid section\n" and exit;                                   2023-08-15                                   

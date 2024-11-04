@@ -1,0 +1,422 @@
+starting build
+
+**********************************************************************
+
+Test build
+build xv6 using make
+
+**********************************************************************
+Trying to build project using make
+make xv6.img fs.img
+make: *** No rule to make target 'xv6.img'.  Stop.
+
+
+test build FAILED
+ (build xv6 using make)
+ make failed (error 2)
+ required file 'xv6.img' does not exist after make
+ required file 'fs.img' does not exist after make
+
+starting test_1
+
+**********************************************************************
+
+Test test_1
+Tests to make sure everything compiles
+
+**********************************************************************
+Running xv6 user progam /home/cs537-1/tests/P4/ctests/test_1.c
+Trying to build project using make
+make xv6.img fs.img
+/tmp/tmp5gem6e5l/p/Makefile
+/tmp/tmp5gem6e5l/p/Makefile.test
+make: *** No rule to make target 'xv6.img'.  Stop.
+
+
+test test_1 FAILED (0 of 1)
+ (Tests to make sure everything compiles)
+ make failed (error 2)
+ required file 'xv6.img' does not exist after make
+ required file 'fs.img' does not exist after make
+
+starting test_2
+
+**********************************************************************
+
+Test test_2
+Make sure default priority and nice are 0
+
+**********************************************************************
+Running xv6 user progam /home/cs537-1/tests/P4/ctests/test_2.c
+Trying to build project using make
+make xv6.img fs.img
+/tmp/tmp5gem6e5l/p/Makefile
+/tmp/tmp5gem6e5l/p/Makefile.test
+make: *** No rule to make target 'xv6.img'.  Stop.
+
+
+test test_2 FAILED (0 of 1)
+ (Make sure default priority and nice are 0)
+ make failed (error 2)
+ required file 'xv6.img' does not exist after make
+ required file 'fs.img' does not exist after make
+
+starting test_3
+
+**********************************************************************
+
+Test test_3
+Test that nice works with valid arguments
+
+**********************************************************************
+Running xv6 user progam /home/cs537-1/tests/P4/ctests/test_3.c
+Trying to build project using make
+make xv6.img fs.img
+/tmp/tmp5gem6e5l/p/Makefile
+/tmp/tmp5gem6e5l/p/Makefile.test
+make: *** No rule to make target 'xv6.img'.  Stop.
+
+
+test test_3 FAILED (0 of 1)
+ (Test that nice works with valid arguments)
+ make failed (error 2)
+ required file 'xv6.img' does not exist after make
+ required file 'fs.img' does not exist after make
+
+starting test_4
+
+**********************************************************************
+
+Test test_4
+Test that nice fails for out of bounds arguments
+
+**********************************************************************
+Running xv6 user progam /home/cs537-1/tests/P4/ctests/test_4.c
+Trying to build project using make
+make xv6.img fs.img
+/tmp/tmp5gem6e5l/p/Makefile
+/tmp/tmp5gem6e5l/p/Makefile.test
+make: *** No rule to make target 'xv6.img'.  Stop.
+
+
+test test_4 FAILED (0 of 1)
+ (Test that nice fails for out of bounds arguments)
+ make failed (error 2)
+ required file 'xv6.img' does not exist after make
+ required file 'fs.img' does not exist after make
+
+starting test_5
+
+**********************************************************************
+
+Test test_5
+Test that getschedstate fails for null pointer
+
+**********************************************************************
+Running xv6 user progam /home/cs537-1/tests/P4/ctests/test_5.c
+Trying to build project using make
+make xv6.img fs.img
+/tmp/tmp5gem6e5l/p/Makefile
+/tmp/tmp5gem6e5l/p/Makefile.test
+make: *** No rule to make target 'xv6.img'.  Stop.
+
+
+test test_5 FAILED (0 of 1)
+ (Test that getschedstate fails for null pointer)
+ make failed (error 2)
+ required file 'xv6.img' does not exist after make
+ required file 'fs.img' does not exist after make
+
+starting test_6
+
+**********************************************************************
+
+Test test_6
+Spinning process is assigned lower priority
+
+**********************************************************************
+Running xv6 user progam /home/cs537-1/tests/P4/ctests/test_6.c
+Trying to build project using make
+make xv6.img fs.img
+/tmp/tmp5gem6e5l/p/Makefile
+/tmp/tmp5gem6e5l/p/Makefile.test
+make: *** No rule to make target 'xv6.img'.  Stop.
+
+
+test test_6 FAILED (0 of 1)
+ (Spinning process is assigned lower priority)
+ make failed (error 2)
+ required file 'xv6.img' does not exist after make
+ required file 'fs.img' does not exist after make
+
+starting test_7
+
+**********************************************************************
+
+Test test_7
+Two processes at same priority level should run in round-robin
+
+**********************************************************************
+Running xv6 user progam /home/cs537-1/tests/P4/ctests/test_7.c
+Trying to build project using make
+make xv6.img fs.img
+/tmp/tmp5gem6e5l/p/Makefile
+/tmp/tmp5gem6e5l/p/Makefile.test
+make: *** No rule to make target 'xv6.img'.  Stop.
+
+
+test test_7 FAILED (0 of 1)
+ (Two processes at same priority level should run in round-robin)
+ make failed (error 2)
+ required file 'xv6.img' does not exist after make
+ required file 'fs.img' does not exist after make
+
+starting test_8
+
+**********************************************************************
+
+Test test_8
+Process with higher priority after sleeping should be scheduled
+
+**********************************************************************
+Running xv6 user progam /home/cs537-1/tests/P4/ctests/test_8.c
+Trying to build project using make
+make xv6.img fs.img
+/tmp/tmp5gem6e5l/p/Makefile
+/tmp/tmp5gem6e5l/p/Makefile.test
+make: *** No rule to make target 'xv6.img'.  Stop.
+
+
+test test_8 FAILED (0 of 1)
+ (Process with higher priority after sleeping should be scheduled)
+ make failed (error 2)
+ required file 'xv6.img' does not exist after make
+ required file 'fs.img' does not exist after make
+
+starting test_9
+
+**********************************************************************
+
+Test test_9
+Process should have higher priority after sleeping
+
+**********************************************************************
+Running xv6 user progam /home/cs537-1/tests/P4/ctests/test_9.c
+Trying to build project using make
+make xv6.img fs.img
+/tmp/tmp5gem6e5l/p/Makefile
+/tmp/tmp5gem6e5l/p/Makefile.test
+make: *** No rule to make target 'xv6.img'.  Stop.
+
+
+test test_9 FAILED (0 of 1)
+ (Process should have higher priority after sleeping)
+ make failed (error 2)
+ required file 'xv6.img' does not exist after make
+ required file 'fs.img' does not exist after make
+
+starting test_10
+
+**********************************************************************
+
+Test test_10
+Runnable process should be scheduled, even if it does not have highest priority
+
+**********************************************************************
+Running xv6 user progam /home/cs537-1/tests/P4/ctests/test_10.c
+Trying to build project using make
+make xv6.img fs.img
+/tmp/tmp5gem6e5l/p/Makefile
+/tmp/tmp5gem6e5l/p/Makefile.test
+make: *** No rule to make target 'xv6.img'.  Stop.
+
+
+test test_10 FAILED (0 of 1)
+ (Runnable process should be scheduled, even if it does not have highest priority)
+ make failed (error 2)
+ required file 'xv6.img' does not exist after make
+ required file 'fs.img' does not exist after make
+
+starting test_11
+
+**********************************************************************
+
+Test test_11
+Correct number of processes in use
+
+**********************************************************************
+Running xv6 user progam /home/cs537-1/tests/P4/ctests/test_11.c
+Trying to build project using make
+make xv6.img fs.img
+/tmp/tmp5gem6e5l/p/Makefile
+/tmp/tmp5gem6e5l/p/Makefile.test
+make: *** No rule to make target 'xv6.img'.  Stop.
+
+
+test test_11 FAILED (0 of 1)
+ (Correct number of processes in use)
+ make failed (error 2)
+ required file 'xv6.img' does not exist after make
+ required file 'fs.img' does not exist after make
+
+starting test_12
+
+**********************************************************************
+
+Test test_12
+Test that getschedstate fails for bad pointer
+
+**********************************************************************
+Running xv6 user progam /home/cs537-1/tests/P4/ctests/test_12.c
+Trying to build project using make
+make xv6.img fs.img
+/tmp/tmp5gem6e5l/p/Makefile
+/tmp/tmp5gem6e5l/p/Makefile.test
+make: *** No rule to make target 'xv6.img'.  Stop.
+
+
+test test_12 FAILED (0 of 1)
+ (Test that getschedstate fails for bad pointer)
+ make failed (error 2)
+ required file 'xv6.img' does not exist after make
+ required file 'fs.img' does not exist after make
+
+starting test_13
+
+**********************************************************************
+
+Test test_13
+Three process workload for scheduler graph
+
+**********************************************************************
+Running xv6 user progam /home/cs537-1/tests/P4/ctests/test_13.c
+Trying to build project using make
+make xv6.img fs.img
+/tmp/tmp5gem6e5l/p/Makefile
+/tmp/tmp5gem6e5l/p/Makefile.test
+make: *** No rule to make target 'xv6.img'.  Stop.
+
+
+test test_13 FAILED (0 of 1)
+ (Three process workload for scheduler graph)
+ make failed (error 2)
+ required file 'xv6.img' does not exist after make
+ required file 'fs.img' does not exist after make
+
+starting test_14
+
+**********************************************************************
+
+Test test_14
+Process using nice should have lower priority
+
+**********************************************************************
+Running xv6 user progam /home/cs537-1/tests/P4/ctests/test_14.c
+Trying to build project using make
+make xv6.img fs.img
+/tmp/tmp5gem6e5l/p/Makefile
+/tmp/tmp5gem6e5l/p/Makefile.test
+make: *** No rule to make target 'xv6.img'.  Stop.
+
+
+test test_14 FAILED (0 of 1)
+ (Process using nice should have lower priority)
+ make failed (error 2)
+ required file 'xv6.img' does not exist after make
+ required file 'fs.img' does not exist after make
+
+**********************************************************************
+Summary:
+test build FAILED
+ (build xv6 using make)
+ make failed (error 2)
+ required file 'xv6.img' does not exist after make
+ required file 'fs.img' does not exist after make
+
+test test_1 FAILED (0 of 1)
+ (Tests to make sure everything compiles)
+ make failed (error 2)
+ required file 'xv6.img' does not exist after make
+ required file 'fs.img' does not exist after make
+
+test test_2 FAILED (0 of 1)
+ (Make sure default priority and nice are 0)
+ make failed (error 2)
+ required file 'xv6.img' does not exist after make
+ required file 'fs.img' does not exist after make
+
+test test_3 FAILED (0 of 1)
+ (Test that nice works with valid arguments)
+ make failed (error 2)
+ required file 'xv6.img' does not exist after make
+ required file 'fs.img' does not exist after make
+
+test test_4 FAILED (0 of 1)
+ (Test that nice fails for out of bounds arguments)
+ make failed (error 2)
+ required file 'xv6.img' does not exist after make
+ required file 'fs.img' does not exist after make
+
+test test_5 FAILED (0 of 1)
+ (Test that getschedstate fails for null pointer)
+ make failed (error 2)
+ required file 'xv6.img' does not exist after make
+ required file 'fs.img' does not exist after make
+
+test test_6 FAILED (0 of 1)
+ (Spinning process is assigned lower priority)
+ make failed (error 2)
+ required file 'xv6.img' does not exist after make
+ required file 'fs.img' does not exist after make
+
+test test_7 FAILED (0 of 1)
+ (Two processes at same priority level should run in round-robin)
+ make failed (error 2)
+ required file 'xv6.img' does not exist after make
+ required file 'fs.img' does not exist after make
+
+test test_8 FAILED (0 of 1)
+ (Process with higher priority after sleeping should be scheduled)
+ make failed (error 2)
+ required file 'xv6.img' does not exist after make
+ required file 'fs.img' does not exist after make
+
+test test_9 FAILED (0 of 1)
+ (Process should have higher priority after sleeping)
+ make failed (error 2)
+ required file 'xv6.img' does not exist after make
+ required file 'fs.img' does not exist after make
+
+test test_10 FAILED (0 of 1)
+ (Runnable process should be scheduled, even if it does not have highest priority)
+ make failed (error 2)
+ required file 'xv6.img' does not exist after make
+ required file 'fs.img' does not exist after make
+
+test test_11 FAILED (0 of 1)
+ (Correct number of processes in use)
+ make failed (error 2)
+ required file 'xv6.img' does not exist after make
+ required file 'fs.img' does not exist after make
+
+test test_12 FAILED (0 of 1)
+ (Test that getschedstate fails for bad pointer)
+ make failed (error 2)
+ required file 'xv6.img' does not exist after make
+ required file 'fs.img' does not exist after make
+
+test test_13 FAILED (0 of 1)
+ (Three process workload for scheduler graph)
+ make failed (error 2)
+ required file 'xv6.img' does not exist after make
+ required file 'fs.img' does not exist after make
+
+test test_14 FAILED (0 of 1)
+ (Process using nice should have lower priority)
+ make failed (error 2)
+ required file 'xv6.img' does not exist after make
+ required file 'fs.img' does not exist after make
+
+Passed 0 of 15 tests.
+Overall 0 of 15
+Points 0 of 14

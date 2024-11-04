@@ -1,0 +1,9 @@
+To run the tests:
+
+1. Navigate to the base directory of your xv6 code
+2. From that directory, execute the runtests executable in this directory
+  Like:  ~cs537-1/tests/P4/runtests
+
+The output from runtests will indicate which tests you have passed and which you failed (if any)
+
+For more options available while testing, run '.../runtests -h'

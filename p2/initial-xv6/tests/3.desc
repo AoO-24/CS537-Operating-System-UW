@@ -1,0 +1,1 @@
+checking for return code being -1 when a null pointer is passed.

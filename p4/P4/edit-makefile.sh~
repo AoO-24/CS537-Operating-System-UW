@@ -1,0 +1,6 @@
+#!/bin/bash
+
+echo $1
+echo $2
+
+gawk '($1 == "_mkdir\\") { printf(\"\t_tester\\\n"); } { print $0 }' $1 > $2
