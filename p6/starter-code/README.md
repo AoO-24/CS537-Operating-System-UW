@@ -1,13 +1,11 @@
 # P6
-**Name:** Wenpei Shao
-**CS Login:** wenpei
-**Wisc ID:** 9083215211
-**Email:** wshao33@wisc.edu
+**Name**: Alston Yu (Jinao)
 
-**Partner** Weitao Su
-**CS Login:** weitao
-**Wisc ID:** 9083281262
-**Email:** wsu43@wisc.edu
+**cs login**: alston
+
+**email**: jyu394@wisc.edu
+
+**Status**: all implementations of three class have been done, and have passed all test cases.
 
 ## Implementation Status:
 
